@@ -9,7 +9,7 @@ function ProductAll() {
   const getProducts=async()=>{
     const searchQuery=query.get("q") || "";
     console.log(searchQuery)
-    let url=`http://localhost:3004/products?q=${searchQuery}`;
+    let url=`https://my-json-server.typicode.com/darby-95/react-shop/products?q=${searchQuery}`;
     // 🌟 비동기적으로 움직이기 때문에 await(기다려)를 쓰고, async로 묶어 오류를 없앤다.
     let response=await fetch(url);
     // 🌟 data가 객체의 형식으로 되어있어 json의 형식으로 바꾸는 명령어이다.
